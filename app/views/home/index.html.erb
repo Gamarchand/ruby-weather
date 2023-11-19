@@ -1,0 +1,10 @@
+<div class="max-w-sm m-2 overflow-hidden content-center rounded shadow-lg">
+  <img class="mx-auto" src="<%= @weather.icon_url %>"></img>
+  <div class="px-6 py-4">
+    <div class="mb-2 text-xl font-bold"> <%= @weather.city %> </div>
+    <div class="mb-2 text-xl font-bold"> <%= Date.today.strftime("%A, %B %d") %> </div>
+    <p><%= @weather.status %></p>
+    <p class="text-xs"><%= @weather.description %></p>
+    <p><%= @weather.temp %><span class="italic">Fahrenheit</span></p>
+  </div>
+</div>
